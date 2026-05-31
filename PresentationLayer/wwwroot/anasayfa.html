@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Rideshare Ana Sayfa</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 50px; background-color: #f4f4f4; }
+        .dashboard { max-width: 600px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); text-align: center; }
+        h1 { color: #333; }
+        .menu-buttons { margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .btn { padding: 15px; color: white; text-decoration: none; border-radius: 6px; font-size: 16px; font-weight: bold; }
+        .btn-vehicle { background-color: #28a745; }
+        .btn-list { background-color: #17a2b8; }
+        .btn-logout { background-color: #dc3545; grid-column: span 2; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard">
+        <h1>🚗 Paylaşımlı Yolculuk Sistemine Hoş Geldin!</h1>
+        <p>Yapmak istediğin işlemi aşağıdaki menüden seçebilirsin.</p>
+        
+        <div class="menu-buttons">
+            <a href="/api/KullaniciKontrol/arac-ekle-sayfasi" class="btn btn-vehicle">🚘 Aracımı Kaydet</a>
+            <a href="/yolculuk-olustur.html" class="btn btn-list" style="background-color: #ffc107; color: #212529;">📅 Yolculuk İlanı Aç</a> 
+            <a href="/api/KullaniciKontrol/yolculuklar-sayfa" class="btn btn-list" style="background-color: #6f42c1; color: white;">🔍 Yolculuk İlanı Ara</a>
+            <a href="/api/KullaniciKontrol/sayfa" class="btn btn-list">👥 Kullanıcıları Listele</a>
+            <a href="/login.html" class="btn btn-logout">🚪 Çıkış Yap</a>
+        </div>
+    </div>
+
+</body>
+</html>

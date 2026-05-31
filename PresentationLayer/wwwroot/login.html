@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sisteme Giriş</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 50px; background-color: #f4f4f4; }
+        .form-container { width: 300px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h2 { text-align: center; color: #333; margin-top: 0; }
+        input { width: 100%; padding: 10px; margin-bottom: 15px; display: block; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+        button { width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #0056b3; }
+        .lnk { display: block; text-align: center; margin-top: 15px; color: #28a745; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Giriş Yap</h2>
+        <form action="/api/KullaniciKontrol/giris" method="POST">
+            <input type="email" name="Email" placeholder="E-posta" required>
+            <input type="password" name="Sifre" placeholder="Şifre" required>
+            <button type="submit">Giriş Yap</button>
+        </form>
+        <a href="/index.html" class="lnk">📝 Hesabın yok mu? Kayıt Ol</a>
+    </div>
+
+</body>
+</html>

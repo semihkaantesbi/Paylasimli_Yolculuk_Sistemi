@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kullanıcı Kayıt Formu</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 50px; background-color: #f4f4f4; }
+        .form-container { width: 300px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h2 { text-align: center; color: #333; margin-top: 0; }
+        input { width: 100%; padding: 10px; margin-bottom: 15px; display: block; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+        button { width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Kayıt Ol</h2>
+        
+        <form action="/api/KullaniciKontrol/kayit" method="POST">
+            <input type="text" name="AdSoyad" placeholder="Kullanıcı Adı" required>
+            <input type="email" name="Email" placeholder="E-posta" required>
+            <input type="password" name="Sifre" placeholder="Şifre" required>
+            <button type="submit">Kayıt Ol</button>
+        </form>
+    </div>
+
+</body>
+</html>

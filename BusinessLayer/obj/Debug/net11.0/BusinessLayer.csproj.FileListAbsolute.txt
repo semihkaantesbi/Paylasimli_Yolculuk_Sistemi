@@ -1,0 +1,15 @@
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\BusinessLayer\bin\Debug\net11.0\BusinessLayer.deps.json
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\BusinessLayer\bin\Debug\net11.0\BusinessLayer.dll
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\BusinessLayer\bin\Debug\net11.0\BusinessLayer.pdb
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\BusinessLayer\bin\Debug\net11.0\DataAccessLayer.dll
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\BusinessLayer\bin\Debug\net11.0\DataAccessLayer.pdb
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\BusinessLayer\obj\Debug\net11.0\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\BusinessLayer\obj\Debug\net11.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\BusinessLayer\obj\Debug\net11.0\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\BusinessLayer\obj\Debug\net11.0\BusinessLayer.AssemblyInfo.cs
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\BusinessLayer\obj\Debug\net11.0\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\BusinessLayer\obj\Debug\net11.0\Business.EA331CBA.Up2Date
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\BusinessLayer\obj\Debug\net11.0\BusinessLayer.dll
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\BusinessLayer\obj\Debug\net11.0\refint\BusinessLayer.dll
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\BusinessLayer\obj\Debug\net11.0\BusinessLayer.pdb
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\BusinessLayer\obj\Debug\net11.0\ref\BusinessLayer.dll

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Yolculuk İlanı Oluştur</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 50px; background-color: #f4f4f4; }
+        .form-container { width: 350px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h2 { text-align: center; color: #333; margin-top: 0; }
+        input { width: 100%; padding: 10px; margin-bottom: 15px; display: block; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+        label { font-size: 14px; color: #666; display: block; margin-bottom: 5px; }
+        button { width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #0056b3; }
+        .lnk { display: block; text-align: center; margin-top: 15px; color: #666; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Yolculuk İlanı Aç</h2>
+        <form action="/api/KullaniciKontrol/yolculuk-olustur" method="POST">
+            <input type="number" name="AracId" placeholder="Araç ID (Örn: 1)" required>
+            <input type="text" name="KalkisYeri" placeholder="Kalkış Yeri (Örn: Samsun)" required>
+            <input type="text" name="VarisYeri" placeholder="Varış Yeri (Örn: Ankara)" required>
+            
+            <label>Yolculuk Tarihi ve Saati</label>
+            <input type="datetime-local" name="TarihSaat" required>
+            
+            <input type="number" step="0.01" name="Fiyat" placeholder="Koltuk Başı Ücret (TL)" required>
+            <input type="number" name="KoltukSayisi" placeholder="Boş Koltuk Sayısı" required>
+            
+            <button type="submit">Yolculuk İlanını Yayınla</button>
+        </form>
+        <a href="/anasayfa.html" class="lnk">🏠 Ana Sayfaya Dön</a>
+    </div>
+
+</body>
+</html>

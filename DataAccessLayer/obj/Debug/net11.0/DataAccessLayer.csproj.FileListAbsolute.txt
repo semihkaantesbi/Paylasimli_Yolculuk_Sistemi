@@ -1,0 +1,12 @@
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\DataAccessLayer\bin\Debug\net11.0\DataAccessLayer.deps.json
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\DataAccessLayer\bin\Debug\net11.0\DataAccessLayer.dll
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\DataAccessLayer\bin\Debug\net11.0\DataAccessLayer.pdb
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\DataAccessLayer\obj\Debug\net11.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\DataAccessLayer\obj\Debug\net11.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\DataAccessLayer\obj\Debug\net11.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\DataAccessLayer\obj\Debug\net11.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\DataAccessLayer\obj\Debug\net11.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\DataAccessLayer\obj\Debug\net11.0\DataAccessLayer.dll
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\DataAccessLayer\obj\Debug\net11.0\refint\DataAccessLayer.dll
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\DataAccessLayer\obj\Debug\net11.0\DataAccessLayer.pdb
+C:\Users\mikda\OneDrive\Masaüstü\semih_Ödev\DataAccessLayer\obj\Debug\net11.0\ref\DataAccessLayer.dll

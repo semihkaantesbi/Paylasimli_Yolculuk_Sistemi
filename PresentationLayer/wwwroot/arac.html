@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Araç Kayıt Formu</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 50px; background-color: #f4f4f4; }
+        .form-container { width: 300px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h2 { text-align: center; color: #333; margin-top: 0; }
+        input { width: 100%; padding: 10px; margin-bottom: 15px; display: block; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+        button { width: 100%; padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #218838; }
+        .lnk { display: block; text-align: center; margin-top: 15px; color: #007bff; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Araç Kaydet</h2>
+        <form action="/api/KullaniciKontrol/arac-kayit" method="POST">
+            <input type="text" name="Marka" placeholder="Araç Markası (Örn: Toyota)" required>
+            <input type="text" name="Model" placeholder="Araç Modeli (Örn: Corolla)" required>
+            <input type="text" name="Plaka" placeholder="Araç Plakası (Örn: 55ABC55)" required>
+            <input type="text" name="Renk" placeholder="Araç Rengi (Örn: Beyaz)">
+            <button type="submit">Aracı Kaydet</button>
+        </form>
+        <a href="/anasayfa.html" class="lnk">🏠 Ana Sayfaya Dön</a>
+    </div>
+
+</body>
+</html>
