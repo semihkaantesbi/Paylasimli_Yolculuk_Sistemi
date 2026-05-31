@@ -6,7 +6,7 @@ namespace DataAccessLayer
 {
     public class Veritabani
     {
-        // Kendi MySQL root şifreni Pwd= kısmına yaz kingo
+       
         private const string BaglantiMetni = "Server=localhost;Database=rideshare_db;Uid=root;Pwd=123456;";
         public static DataTable ProsedurCalistir(string prosedurAdi, MySqlParameter[] parametreler = null)
         {

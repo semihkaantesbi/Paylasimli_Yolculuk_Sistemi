@@ -117,7 +117,7 @@ namespace BusinessLayer
             Veritabani.ProsedurCalistir("sp_CancelRide", parametreler);
         }public static DataTable KullaniciAraclariniGetir(int kullaniciId)
         {
-            // Düz sorgu yerine MySQL'deki prosedürü parametreyle tetikliyoruz
+          
             MySqlParameter[] parametreler = new MySqlParameter[]
             {
                 new MySqlParameter("p_kullanici_id", kullaniciId)
