@@ -8,11 +8,10 @@ namespace PresentationLayer.Controllers
     [Route("api/[controller]")]
     public class KullaniciKontrol : ControllerBase
     {
-        // ==================== GÜVENLİK / OTOMASYON DEĞİŞKENİ ====================
-        // Giriş yapan kullanıcının ID'sini hafızada tutarak başkasının adından işlem yapılmasını engeller.
+  
         public static int AktifKullaniciId = 1; 
 
-        // ==================== MODEL YAPILARI ====================
+     
         
         public class KayitIstegi
         {
@@ -46,9 +45,6 @@ namespace PresentationLayer.Controllers
         }
 
 
-        // ==================== ENDPOINT METOTLARI ====================
-
-        // 1. KULLANICI KAYIT
         [HttpPost("kayit")]
         public IActionResult Kayit([FromForm] KayitIstegi veri)
         {
@@ -67,7 +63,7 @@ namespace PresentationLayer.Controllers
             }
         }
 
-        // 2. KULLANICI GİRİŞ
+       
         [HttpPost("giris")]
         public IActionResult Giris([FromForm] GirişIstegi veri)
         {
@@ -92,7 +88,7 @@ namespace PresentationLayer.Controllers
             }
         }
 
-        // 3. ARAÇ KAYIT (Giriş yapan kullanıcıya otomatik bağlanır)
+        
         [HttpPost("arac-kayit")]
         public IActionResult AracKayit([FromForm] AracKayitIstegi veri)
         {
@@ -112,7 +108,7 @@ namespace PresentationLayer.Controllers
             }
         }
 
-        // 4. YOLCULUK OLUŞTURMA (Giriş yapan sürücü adına otomatik ilan açar)
+   
         [HttpPost("yolculuk-olustur")]
         public IActionResult YolculukOlustur([FromForm] YolculukIstegi veri)
         {
@@ -127,7 +123,7 @@ namespace PresentationLayer.Controllers
             }
         }
 
-        // 5. REZERVASYON YAPMA
+   
         [HttpPost("rezervasyon-yap")]
         public IActionResult RezervasyonYap([FromForm] int yolculukId)
         {
@@ -142,7 +138,6 @@ namespace PresentationLayer.Controllers
             }
         }
 
-        // 6. YOLCULUK İLANINI İPTAL ET / SİL
         [HttpPost("yolculuk-iptal")]
         public IActionResult YolculukIptal([FromForm] int yolculukId)
         {
@@ -157,7 +152,7 @@ namespace PresentationLayer.Controllers
             }
         }
 
-        // 7. KULLANICI LİSTELEME SAYFASI (HTML)
+       
         [HttpGet("sayfa")]
         public IActionResult ListeleSayfasi()
         {
@@ -214,7 +209,7 @@ namespace PresentationLayer.Controllers
             }
         }
 
-        // 8. DİNAMİK YOLCULUK LİSTELEME VE İŞLEM SAYFASI (HTML)
+      
         [HttpGet("yolculuklar-sayfa")]
         public IActionResult YolculuklarSayfasi()
         {
@@ -258,8 +253,7 @@ namespace PresentationLayer.Controllers
                 {
                     System.DateTime tarih = System.Convert.ToDateTime(row["tarih_saat"]);
                     
-                    // İlanı açan sürücünün gerçek ID'sini veritabanından çekilen satırdan alıyoruz
-                    // (Not: sp_GetAllRides prosedüründe 'kullanici_id' sütununun seçilmiş olduğundan emin olun)
+                  
                     int surucuId = System.Convert.ToInt32(row["kullanici_id"]);
 
                     html += $@"
@@ -273,7 +267,7 @@ namespace PresentationLayer.Controllers
                                 <td>{row["koltuk_sayisi"]}</td>
                                 <td>";
 
-                    // Akıllı Buton Mekanizması: İlan sahibine 'İlanı Sil', yolcuya 'Koltuk Ayırt' gösterir.
+                 
                     if (surucuId == AktifKullaniciId)
                     {
                         html += $@"
@@ -306,13 +300,13 @@ namespace PresentationLayer.Controllers
             {
                 return StatusCode(500, $"Yolculuk listeleme hatası: {ex.Message}");
             }
-        }// 9. ARAÇ KAYIT VE KULLANICININ ARAÇLARINI LİSTELEME SAYFASI (HTML)
+        }
         [HttpGet("arac-ekle-sayfasi")]
         public IActionResult AracEkleSayfasi()
         {
             try
             {
-                // Giriş yapan kullanıcının araçlarını çekiyoruz
+                
                 DataTable dt = KullaniciServis.KullaniciAraclariniGetir(AktifKullaniciId);
 
                 string html = @"

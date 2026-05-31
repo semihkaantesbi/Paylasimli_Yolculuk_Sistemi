@@ -9,7 +9,7 @@ namespace BusinessLayer
     {
         public static void KullaniciKaydet(string adSoyad, string email, string sifre)
         {
-            // İş Kuralları (Giriş Kontrolleri)
+           
             if (string.IsNullOrEmpty(adSoyad) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(sifre))
             {
                 throw new Exception("Lütfen tüm alanları doldurun.");
@@ -20,7 +20,7 @@ namespace BusinessLayer
                 throw new Exception("Geçersiz e-mail adresi.");
             }
 
-            // Parametreleri MySQL formatına bağla ve DAL katmanını tetikle
+          
             MySqlParameter[] parametreler = new MySqlParameter[]
             {
                 new MySqlParameter("p_ad_soyad", adSoyad),
@@ -36,7 +36,7 @@ namespace BusinessLayer
             return Veritabani.ProsedurCalistir("sp_GetAllUsers");
         }public static void AracKaydet(int kullaniciId, string marka, string model, string plaka, string renk)
         {
-            // İş Kuralları
+           
             if (kullaniciId <= 0 || string.IsNullOrEmpty(marka) || string.IsNullOrEmpty(model) || string.IsNullOrEmpty(plaka))
             {
                 throw new Exception("Lütfen zorunlu araç alanlarını doldurun.");
@@ -65,7 +65,7 @@ namespace BusinessLayer
                 new MySqlParameter("p_sifre", sifre)
             };
 
-            // Eşleşen kullanıcı varsa DataTable içinde satır dönecek
+           
             return Veritabani.ProsedurCalistir("sp_LoginControl", parametreler);
         }public static void YolculukOlustur(int kullaniciId, int aracId, string kalkis, string varis, System.DateTime tarih, decimal fiyat, int koltuk)
         {
@@ -88,7 +88,7 @@ namespace BusinessLayer
             Veritabani.ProsedurCalistir("sp_InsertRide", parametreler);
         }public static DataTable TumYolculuklariGetir()
         {
-            // Veritabanındaki tüm aktif yolculuk ilanlarını döner
+           
             return Veritabani.ProsedurCalistir("sp_GetAllRides");
         }public static void RezervasyonYap(int yolculukId, int yolcuId)
         {
@@ -103,7 +103,7 @@ namespace BusinessLayer
                 new MySqlParameter("p_yolcu_id", yolcuId)
             };
 
-            // Rezervasyon prosedürünü tetikliyoruz
+            
             Veritabani.ProsedurCalistir("sp_BookSeat", parametreler);
         }public static void RezervasyonIptal(int rezervasyonId)
         {
